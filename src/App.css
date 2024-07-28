@@ -22,6 +22,7 @@
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease; 
     margin: 0 auto 60px;
   }
   

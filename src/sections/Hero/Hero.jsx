@@ -18,7 +18,6 @@ import CV from '../../assets/CV - THIAGO HENRIQUE HEINLE SANCHEZ.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 
-// Hero component that displays the hero section with Thiago's info, image, icons, and download CV button.
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -45,11 +44,11 @@ function Hero() {
           <a href="https://github.com/ThiagoHs1/" target="_blank">
             <img src={githubIcon} alt="Github Icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/thiago-heinle-sanchez/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin Icon" />
           </a>
         </span>
-        <p>Desenvolvedor web apaixonado, sempre buscando <br></br>aprimorar minhas habilidades através de projetos práticos.</p>
+        <p className={styles.description} >Desenvolvedor web apaixonado, sempre buscando aprimorar minhas habilidades através de projetos práticos.</p>
         <a href={CV} download>
           <button className="hover" >Download CV</button>
         </a>
