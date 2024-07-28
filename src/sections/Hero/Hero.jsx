@@ -27,10 +27,13 @@ function Hero() {
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
   return (
+    
     <section id="hero" className={styles.container}>
+     <img src={themeIcon} alt="Modo escuro icon" className={styles.ColorMode} onClick={toggleTheme} />
       <div className={styles.colorModeContainer}>
+      
         <img src={thiago} alt="Thiago" className={styles.heroImage} />
-        <img src={themeIcon} alt="Modo escuro icon" className={styles.ColorMode} onClick={toggleTheme} />
+       
       </div>
       <div className={styles.info}>
         <h1 className={styles.title}>Thiago H Sanchez</h1>
@@ -46,7 +49,7 @@ function Hero() {
             <img src={linkedinIcon} alt="Linkedin Icon" />
           </a>
         </span>
-        <p>Desenvolvedor web apaixonado, sempre buscando aprimorar minhas habilidades através de projetos práticos.</p>
+        <p>Desenvolvedor web apaixonado, sempre buscando <br></br>aprimorar minhas habilidades através de projetos práticos.</p>
         <a href={CV} download>
           <button className="hover" >Download CV</button>
         </a>
