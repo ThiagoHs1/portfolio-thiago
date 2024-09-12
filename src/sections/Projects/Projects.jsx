@@ -5,6 +5,7 @@ import efood from '../../assets/efood.png';
 import agenda from '../../assets/agenda.png';
 import sports from '../../assets/sports.png';
 import clima from '../../assets/climaapp.png';
+import geradorSenha from '../../assets/gerador-senha.png'
 
 
 function Projects() {
@@ -30,6 +31,13 @@ function Projects() {
               link="https://github.com/ThiagoHs1/ClimaAppJava/"
               h3="Clima App"
               p="Uma aplicação Java simples para visualizar a previsão do tempo em tempo real"
+            />
+
+              <ProjectCard
+              src={geradorSenha}
+              link="https://github.com/ThiagoHs1/ClimaAppJava/"
+              h3="Gerador de senha"
+              p="Aplicativo de desktop simples em Java para gerar senhas seguras"
             />
 
             <ProjectCard
