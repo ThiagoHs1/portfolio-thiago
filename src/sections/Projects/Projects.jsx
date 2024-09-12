@@ -4,6 +4,7 @@ import styles from './ProjectsStyles.module.css';
 import efood from '../../assets/efood.png';
 import agenda from '../../assets/agenda.png';
 import sports from '../../assets/sports.png';
+import clima from '../../assets/climaapp.png';
 
 
 function Projects() {
@@ -22,6 +23,13 @@ function Projects() {
               link="https://github.com/ThiagoHs1/ebac_sports/"
               h3="Sports website"
               p="Aplicação em react para treinar uma loja virtual"
+            />
+
+              <ProjectCard
+              src={clima}
+              link="https://github.com/ThiagoHs1/ClimaAppJava/"
+              h3="Clima App"
+              p="Uma aplicação Java simples para visualizar a previsão do tempo em tempo real"
             />
 
             <ProjectCard

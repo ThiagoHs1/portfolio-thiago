@@ -4,12 +4,12 @@
     text-align: center;
   
     img, png {
-      max-width: 350px;
+      max-width: 350px; 
+      max-height: 350px; 
       align-self: center;
       background-color: var(--project-card-bg);
       border-radius: 20px;
     }
-  
     a {
       width: fit-content;
       text-decoration: none;
@@ -23,11 +23,17 @@
   }
   
   .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ajusta a largura mínima das colunas */
+    gap: 50px;
   }
+  
+  @media (width >= 800px) {
+    .projectsContainer {
+      padding: 0 30px;
+    }
+  }
+  
   
   @media (width >= 800px) {
     .projectsContainer {
